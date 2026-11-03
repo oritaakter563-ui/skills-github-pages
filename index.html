@@ -2,74 +2,124 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的紫色小世界</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #eadcff, #c9a7f5, #f5eaff);
-      color: #49336b;
-      text-align: center;
-      min-height: 100vh;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的未来世界 | CYBER WORLD</title>
 
-    header {
-      padding: 70px 20px 40px;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    h1 {
-      font-size: 38px;
-      color: #7041a6;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #080d16;
+  color: #eaf6ff;
+  text-align: center;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(#101d2a88 1px, transparent 1px),
+    linear-gradient(90deg, #101d2a88 1px, transparent 1px);
+  background-size: 35px 35px;
+}
 
-    .card {
-      background: white;
-      margin: 20px auto;
-      padding: 25px;
-      border-radius: 20px;
-      max-width: 500px;
-      width: 80%;
-      box-shadow: 0 5px 20px #8e65b333;
-    }
+header {
+  padding: 85px 20px 55px;
+  background: linear-gradient(180deg, #101c2d, transparent);
+}
 
-    h2 {
-      color: #8755bd;
-    }
+h1 {
+  font-size: 38px;
+  color: #00d9ff;
+  text-shadow: 0 0 12px #00d9ff;
+}
 
-    footer {
-      padding: 30px;
-      color: #7041a6;
-    }
-  </style>
+header p {
+  color: #a9c8db;
+  letter-spacing: 3px;
+}
+
+.card {
+  background: #111b29;
+  border: 1px solid #00bfff;
+  margin: 25px auto;
+  padding: 28px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 85%;
+  box-shadow: 0 0 15px #00aaff33;
+}
+
+h2 {
+  color: #00d9ff;
+  text-shadow: 0 0 8px #00d9ff66;
+}
+
+.card p {
+  color: #c5d5e3;
+  line-height: 1.8;
+}
+
+button {
+  background: transparent;
+  color: #00d9ff;
+  border: 2px solid #00d9ff;
+  padding: 15px 32px;
+  font-size: 17px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  box-shadow: 0 0 12px #00d9ff66;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00d9ff;
+  color: #080d16;
+  box-shadow: 0 0 25px #00d9ff;
+}
+
+footer {
+  padding: 35px;
+  color: #66869d;
+  letter-spacing: 2px;
+}
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>✨ 欢迎来到我的小世界 💜</h1>
-    <p>一个充满梦想与美好的地方</p>
-  </header>
+<header>
+  <h1>⚡ WELCOME TO MY WORLD</h1>
+  <p>欢迎进入我的未来世界</p>
+  <button onclick="sayHello()">ENTER THE FUTURE</button>
+</header>
 
-  <section class="card">
-    <h2>🌸 关于我</h2>
-    <p>你好！欢迎认识我。</p>
-    <p>我喜欢学习、探索新事物和创造美好。</p>
-  </section>
+<section class="card">
+  <h2>◈ 关于我 / ABOUT ME</h2>
+  <p>你好！欢迎来到我的个人空间。</p>
+  <p>探索科技，学习新知，创造属于自己的未来。</p>
+</section>
 
-  <section class="card">
-    <h2>💜 我的兴趣</h2>
-    <p>阅读 · 音乐 · 旅行 · 学习</p>
-  </section>
+<section class="card">
+  <h2>◈ 我的兴趣 / INTERESTS</h2>
+  <p>科技 · 音乐 · 旅行 · 编程</p>
+</section>
 
-  <section class="card">
-    <h2>🌟 我的梦想</h2>
-    <p>每天进步一点点，勇敢实现自己的梦想。</p>
-  </section>
+<section class="card">
+  <h2>◈ 我的梦想 / MY DREAM</h2>
+  <p>不断突破自己，探索未知，成为更好的自己。</p>
+</section>
 
-  <footer>
-    Made with 💜 by Me
-  </footer>
+<footer>
+  SYSTEM ONLINE // MADE BY ME
+</footer>
+
+<script>
+function sayHello() {
+  alert("WELCOME TO THE FUTURE, MY FRIEND! ⚡");
+}
+</script>
 
 </body>
 </html>
