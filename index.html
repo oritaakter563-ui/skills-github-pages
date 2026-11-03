@@ -144,6 +144,24 @@ footer {
   color: #66869d;
   letter-spacing: 2px;
 }
+
+/* 红色安全警报 */
+.alarm {
+  color: #ff3030;
+  font-weight: bold;
+  animation: alarmFlash 1s infinite;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+@keyframes alarmFlash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
 </style>
 </head>
 
@@ -153,7 +171,14 @@ footer {
   <h2>⚙ BASE CONTROL CENTER</h2>
   <p> SYSTEM STATUS: <span style="color:#00ff99">ONLINE</span></p>
   <p> POWER LEVEL: <span id="power">98%</span></p>
-  <p> SECURITY: ACTIVE</p>
+  
+<p>
+  SECURITY:
+  <span class="alarm">
+    ● ACTIVE
+  </span>
+</p>
+
   <p> NETWORK: CONNECTED</p>
 </section>
 
