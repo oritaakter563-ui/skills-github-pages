@@ -152,7 +152,7 @@ footer {
 <section class="card">
   <h2>⚙ BASE CONTROL CENTER</h2>
   <p> SYSTEM STATUS: <span style="color:#00ff99">ONLINE</span></p>
-  <p> POWER LEVEL: 98%</p>
+  <p> POWER LEVEL: <span id="power">98%</span></p>
   <p> SECURITY: ACTIVE</p>
   <p> NETWORK: CONNECTED</p>
 </section>
@@ -183,11 +183,25 @@ footer {
   SYSTEM ONLINE // MADE BY ME
 </footer>
 
+
 <script>
 function sayHello() {
   alert("WELCOME TO THE FUTURE, MY FRIEND! ⚡");
 }
+
+// 动态能源系统
+let power = 98;
+
+setInterval(function() {
+  power = Math.floor(Math.random() * 10) + 90;
+
+  const powerDisplay = document.getElementById("power");
+  if (powerDisplay) {
+    powerDisplay.innerText = power + "%";
+  }
+}, 2000);
 </script>
+
 
 </body>
 </html>
